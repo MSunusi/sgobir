@@ -1,163 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Sunusi Ibrahim Muhammad | AI and Computer Vision Researcher" />
-    <meta name="author" content="Sunusi Ibrahim Muhammad" />
-    <title>Sunusi Ibrahim Muhammad | AI & Computer Vision Researcher</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
-  <body id="page-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Sunusi Ibrahim Muhammad</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Profile Image" />
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-        </ul>
-      </div>
-    </nav>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sunusi Ibrahim Muhammad — AI & Computer Vision Researcher" />
+  <meta name="author" content="Sunusi Ibrahim Muhammad" />
+  <title>Sunusi Ibrahim Muhammad | AI & Computer Vision Researcher</title>
 
-    <!-- Page Content -->
-    <div class="container-fluid p-0">
-      <!-- About -->
-      <section class="resume-section" id="about">
-        <div class="resume-section-content">
-          <h1 class="mb-0">
-            Sunusi
-            <span class="text-primary">Ibrahim Muhammad</span>
-          </h1>
-          <div class="subheading mb-5">
-            Kano, Nigeria ·
-            <a href="mailto:sunusimuhammada@gmail.com">sunusimuhammada@gmail.com</a> ·
-            <a href="tel:+2348168363675">+234 816 836 3675</a>
-          </div>
-          <p class="lead mb-5">
-            AI and Computer Vision researcher passionate about developing ethical, data-driven solutions for global and local challenges. 
-            My research focuses on deep learning systems for visual understanding—object detection, segmentation, and classification across real-world domains. 
-            I am committed to open-source collaboration, trustworthy AI, and cross-disciplinary research that advances the frontiers of computer vision.
-          </p>
-          <div class="social-icons">
-            <a class="social-icon" href="https://linkedin.com/in/sunusi-ibrahim-muhammad-19a654236"><i class="fab fa-linkedin-in"></i></a>
-            <a class="social-icon" href="https://github.com/MSunusi"><i class="fab fa-github"></i></a>
-            <a class="social-icon" href="https://msunusi.github.io/sgobir/"><i class="fas fa-globe"></i></a>
-          </div>
-        </div>
-      </section>
-      <hr class="m-0" />
+  <!-- Font & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/3d5e2a77ef.js" crossorigin="anonymous"></script>
 
-      <!-- Experience -->
-      <section class="resume-section" id="experience">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Experience</h2>
+  <!-- Styling -->
+  <style>
+    :root {
+      --bg-color: #0b132b;
+      --text-color: #e0e0e0;
+      --accent-color: #3a86ff;
+      --secondary-color: #1c2541;
+    }
 
-          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Cofounder & CTO</h3>
-              <div class="subheading mb-3">EjazTech.AI</div>
-              <p>
-                Leading research and development of AI systems focused on real-world applications in agriculture, industry, and public infrastructure. 
-                Built datasets from underrepresented African environments and developed computer vision models for agriculture, inspection, and smart city regulation.
-              </p>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">Aug 2024 – Present</span></div>
-          </div>
+    * {
+      box-sizing: border-box;
+    }
 
-          <div class="d-flex flex-column flex-md-row justify-content-between">
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Machine Learning Intern</h3>
-              <div class="subheading mb-3">Nigerian National Petroleum Company Limited (NNPCL)</div>
-              <p>
-                Designed and implemented machine learning models for production forecasting and predictive maintenance. 
-                Created computer vision systems for pipeline leak detection and safety monitoring to enhance operational efficiency and reduce risk.
-              </p>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">May 2024 – May 2025</span></div>
-          </div>
-        </div>
-      </section>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      line-height: 1.6;
+    }
 
-      <hr class="m-0" />
-      <!-- Projects -->
-      <section class="resume-section" id="projects">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Selected Projects</h2>
-          <ul>
-            <li><strong>Pipeline Leak Detection Using YOLOv11:</strong> Built an AI-powered system using Ultralytics YOLOv11 for real-time leak detection and automated corrective action suggestions. <a href="https://github.com/MSunusi/pipeline-leak-detection">[GitHub]</a></li>
-            <li><strong>Deep Learning-Based Classification of Sedimentary Structures:</strong> Developed a YOLOv11 model to automatically identify and classify sedimentary structures in drill core images. <a href="https://github.com/MSunusi/-Deep-Learning-Based-Classification-of-Sedimentary-Structures">[GitHub]</a></li>
-            <li><strong>Sesame Plant Segmentation Dataset:</strong> Created and open-sourced a YOLO-formatted dataset for agricultural computer vision research. <a href="https://www.kaggle.com/datasets/ismailismailtijjani/sesame-plant-detection-dataset">[Kaggle]</a></li>
-            <li><strong>NAIRA Currency Dataset:</strong> Curated dataset of Nigerian Naira denominations for currency classification models. <a href="https://www.kaggle.com/datasets/ismailismailtijjani/naira-nigerian-currency-dataset">[Kaggle]</a></li>
-          </ul>
-        </div>
-      </section>
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background-color: var(--secondary-color);
+      border-bottom: 3px solid var(--accent-color);
+    }
 
-      <hr class="m-0" />
-      <!-- Education -->
-      <section class="resume-section" id="education">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Education</h2>
-          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Bayero University Kano</h3>
-              <div class="subheading mb-3">Bachelor of Engineering in Petroleum Engineering</div>
-              <p>GPA: 4.58/5.0 (Top 1%)</p>
-              <p><strong>Relevant Coursework:</strong> Machine Learning, Deep Learning, Computer Vision, Reservoir Simulation, Data Science for Engineering.</p>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">2019 – Present</span></div>
-          </div>
-        </div>
-      </section>
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid var(--accent-color);
+      margin-bottom: 20px;
+    }
 
-      <hr class="m-0" />
-      <!-- Skills -->
-      <section class="resume-section" id="skills">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Skills</h2>
-          <div class="subheading mb-3">Technical</div>
-          <p>PyTorch, TensorFlow, Keras, OpenCV, Scikit-learn, MLflow, Pandas, NumPy, Matplotlib, Seaborn, Docker, GitHub Actions.</p>
-          <div class="subheading mb-3">Research</div>
-          <p>Dataset creation, reproducible ML experiments, experiment tracking, ethical AI research, research writing, and visualization.</p>
-          <div class="subheading mb-3">Other</div>
-          <p>Open-source collaboration, mentoring, community building, and science communication.</p>
-        </div>
-      </section>
+    header h1 {
+      margin: 10px 0;
+      font-size: 2.2em;
+      font-weight: 700;
+      color: white;
+    }
 
-      <hr class="m-0" />
-      <!-- Awards -->
-      <section class="resume-section" id="awards">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Awards & Recognition</h2>
-          <ul class="fa-ul mb-0">
-            <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span> Best Poster Award – AI Bootcamp, Data Science Nigeria (2025)</li>
-            <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span> Second Position – Young Engineers AI Challenge (2025)</li>
-            <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span> Top 5 – Deep Learning Indaba Agricultural AI Challenge (2025)</li>
-            <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span> AI Contribution Recognition – GOTECH Dubai (2025)</li>
-          </ul>
-        </div>
-      </section>
+    header h2 {
+      font-size: 1.1em;
+      font-weight: 400;
+      color: var(--accent-color);
+      margin-bottom: 15px;
+    }
+
+    header .social-icons a {
+      color: var(--text-color);
+      font-size: 1.4em;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    header .social-icons a:hover {
+      color: var(--accent-color);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h3 {
+      color: var(--accent-color);
+      font-size: 1.4em;
+      border-bottom: 2px solid var(--accent-color);
+      display: inline-block;
+      margin-bottom: 20px;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9em;
+      color: #aaa;
+      background-color: var(--secondary-color);
+      border-top: 2px solid var(--accent-color);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="assets/img/profile.jpg" alt="Profile Photo" />
+    <h1>Sunusi Ibrahim Muhammad</h1>
+    <h2>AI & Computer Vision Researcher | CTO at EjazTech.AI</h2>
+    <p>Kano, Nigeria · <a href="mailto:sunusimuhammada@gmail.com">sunusimuhammada@gmail.com</a> · <a href="tel:+2348168363675">+234 816 836 3675</a></p>
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/sunusi-ibrahim-muhammad-19a654236"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/MSunusi"><i class="fab fa-github"></i></a>
+      <a href="https://msunusi.github.io/sgobir/"><i class="fas fa-globe"></i></a>
     </div>
+  </header>
 
-    <!-- Bootstrap core JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+  <section id="about">
+    <h3>About Me</h3>
+    <p>
+      I am an AI and Computer Vision researcher passionate about developing ethical, data-driven solutions for global and local challenges. 
+      My research focuses on deep learning systems for visual understanding—covering object detection, segmentation, and classification tasks across diverse real-world domains.
+      I am committed to open-source collaboration, reproducible research, and cross-disciplinary innovation that bridges technology with societal impact.
+    </p>
+  </section>
+
+  <section id="interests">
+    <h3>Research Interests</h3>
+    <ul>
+      <li>Computer Vision & Deep Learning</li>
+      <li>Self-Supervised and Representation Learning</li>
+      <li>Trustworthy and Interpretable AI</li>
+      <li>AI for Science and Engineering</li>
+      <li>Ethical and Responsible AI Deployment</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h3>Experience</h3>
+    <ul>
+      <li>
+        <strong>Cofounder & CTO – EjazTech.AI (Aug 2024 – Present)</strong><br />
+        Leading research and development of vision-based AI systems in agriculture, inspection, and public infrastructure. 
+        Built datasets from underrepresented African environments and mentored young AI developers.
+      </li>
+      <li>
+        <strong>Machine Learning Intern – Nigerian National Petroleum Company Limited (May 2024 – May 2025)</strong><br />
+        Developed ML and CV models for oil production forecasting and pipeline leak detection to enhance safety and efficiency.
+      </li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h3>Selected Projects</h3>
+    <ul>
+      <li><strong>Pipeline Leak Detection Using YOLOv11:</strong> Built an AI-powered system using Ultralytics YOLOv11 for real-time pipeline leak detection. <a href="https://github.com/MSunusi/pipeline-leak-detection">[GitHub]</a></li>
+      <li><strong>Deep Learning-Based Classification of Sedimentary Structures:</strong> Applied YOLOv11 to identify and classify sedimentary structures in drill core images. <a href="https://github.com/MSunusi/-Deep-Learning-Based-Classification-of-Sedimentary-Structures">[GitHub]</a></li>
+      <li><strong>Sesame Plant Segmentation Dataset:</strong> Created and open-sourced a YOLO-formatted dataset for agricultural computer vision tasks. <a href="https://www.kaggle.com/datasets/ismailismailtijjani/sesame-plant-detection-dataset">[Kaggle]</a></li>
+      <li><strong>NAIRA Currency Dataset:</strong> Built a curated dataset of Nigerian Naira notes for classification research. <a href="https://www.kaggle.com/datasets/ismailismailtijjani/naira-nigerian-currency-dataset">[Kaggle]</a></li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h3>Publications</h3>
+    <ul>
+      <li><strong>Muhammad, S. I.</strong>, Makwashi, N., Tijjani, I., & Abdul Salam, A. (2025). Data-Driven Approach in Reservoir Production Forecast: Comparison of Machine Learning and Deep Learning. <i>Society of Petroleum Engineers (SPE NAIC 2025)</i>. <a href="https://onepetro.org/SPENAIC/proceedings/25NAIC/25NAIC/D021S007R005/787380">[Link]</a></li>
+      <li>Tijjani, I. I., <strong>Muhammad, S. I.</strong>, & Mustapha, A. A. (2025). NLPDRS: A YOLOv8 and PaddleOCR-Based End-to-End Framework for Nigerian License Plate Detection and Recognition System. <i>IJSRCSE</i>. (Accepted for publication)</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h3>Education</h3>
+    <ul>
+      <li><strong>B.Sc. Petroleum Engineering – Bayero University Kano</strong> (2019 – Present)<br />GPA: 4.58/5.0 (Top 1%)<br /><em>Relevant Coursework:</em> Machine Learning, Deep Learning, Computer Vision, Reservoir Simulation, Data Science for Engineering</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h3>Skills</h3>
+    <ul>
+      <li><strong>Technical:</strong> PyTorch, TensorFlow, Keras, OpenCV, Scikit-learn, MLflow, Pandas, NumPy, Matplotlib, Seaborn, Docker, GitHub Actions</li>
+      <li><strong>Research:</strong> Dataset creation, reproducible experiments, research writing, interpretability, ethical AI</li>
+      <li><strong>Other:</strong> Mentorship, open-source contribution, science communication, technical leadership</li>
+    </ul>
+  </section>
+
+  <section id="awards">
+    <h3>Awards & Recognition</h3>
+    <ul>
+      <li>🏆 Best Poster Award – AI Bootcamp, Data Science Nigeria (2025)</li>
+      <li>🥈 Second Position – Young Engineers AI Challenge (2025)</li>
+      <li>🏅 Top 5 – Deep Learning Indaba Agricultural AI Challenge (2025)</li>
+      <li>🌍 AI Contribution Recognition – GOTECH 2025, Dubai</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Sunusi Ibrahim Muhammad · AI & Computer Vision Researcher</p>
+  </footer>
+</body>
 </html>
